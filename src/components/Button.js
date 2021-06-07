@@ -1,8 +1,6 @@
-const Button = () => {
+const Button = ({ color,text }) => {
     return (
-        <div>
-            
-        </div>
+    <button style={{ backgroundColor: color }} className="btn">{text}</button>
     )
 }
 
