@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import Header from './components/Header'
+import AddTask from './components/AddTask'
 import Tasks from './components/Tasks'
 
 function App() {
+  const [showAddTask, setShowAddTask] = useState(false);
   const [tasks, setTasks] = useState(
     [
       {
@@ -26,19 +28,27 @@ function App() {
     ]
   );
 
+  // Adicionar Tarefa
+  const adicionarTarefa = (task) => {
+    const id = Math.floor(Math.random()*10000)+ 1;
+    const newTask = { id,...task }
+    setTasks([...tasks, newTask]);
+  };
+
   // Deletar Tarefa
   const deletarTarefa = (id) => {
-    setTasks(tasks.filter((task) => task.id !== id))
-  }
+    setTasks(tasks.filter((task) => task.id !== id));
+  };
 
   // Alternar Lembrete
   const lembrete = (id) => {
-    setTasks(tasks.map((task) => task.id === id ? { ...task, reminder: !task.reminder } : task))
-  }
+    setTasks(tasks.map((task) => task.id === id ? { ...task, reminder: !task.reminder } : task));
+  };
 
   return (
     <div className="container">
-      <Header />
+      <Header onAdd={() => setShowAddTask(!showAddTask)} showAdd={showAddTask} />
+      {showAddTask && <AddTask onAdd={adicionarTarefa} />}
       {tasks.length > 0 ? (
         <Tasks tasks={tasks} onDelete={deletarTarefa} onToggle={lembrete} />
       ) : 'Sem tarefas cadastradas'}
