@@ -10,8 +10,9 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+
 .container {
-  max-width: 500px;
+  max-width: 600px;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
@@ -53,6 +54,7 @@ body {
 .btn-block {
   display: block;
   width: 100%;
+  margin: 0 auto;
 }
 
 .task {
@@ -74,10 +76,13 @@ body {
 
 .add-form {
   margin-bottom: 40px;
+  background-color: rgb(237, 240, 239);
+  border-radius: 5px;
+  border: 1px solid rgb(186, 187, 187);
 }
 
 .form-control {
-  margin: 20px 0;
+  margin: 20px 10px;
 }
 
 .form-control label {
