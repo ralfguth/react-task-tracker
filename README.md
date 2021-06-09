@@ -1,3 +1,3 @@
-# Task Tracker
+# Tarefaz
 
 Gerenciador de tarefas feito em React.
