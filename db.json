@@ -1,16 +1,28 @@
 {
   "tasks": [
     {
-      "text": "Comer Banana",
-      "day": "Hoje",
+      "text": "Estudar React",
+      "day": "10 de junho às 18:00h",
       "reminder": true,
       "id": 1
     },
     {
-      "text": "Almoçar",
-      "day": "Todo dia ao meio-dia",
+      "text": "Estudar Javascript",
+      "day": "11 de junho às 9:00h",
       "reminder": false,
       "id": 2
+    },
+    {
+      "text": "Levar o lixo",
+      "day": "Todos os dias ás 13h",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "Passear com a namorada",
+      "day": "12 de junho às 10:00h",
+      "reminder": true,
+      "id": 4
     }
   ]
 }
