@@ -1,6 +1,6 @@
 # Tarefaz
 Gerenciador de tarefas feito em React.
-Este é o projeto de um [crash course](https://www.youtube.com/watch?v=w7ejDZ8SWv8) de React que eu fiz pelo Youtube. Trata-se de um front-end em React com um JSON-server como um simulacro de API REST como back-end.
+Este é o projeto de um [crash course](https://www.youtube.com/watch?v=w7ejDZ8SWv8) de React que eu fiz pelo Youtube. Trata-se de um front-end em React com um JSON-server como simulacro de API REST como back-end.
 
 ## Como rodar na sua máquina
 
