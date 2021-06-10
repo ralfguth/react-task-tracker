@@ -9,7 +9,7 @@
     {
       "text": "Almoçar",
       "day": "Todo dia ao meio-dia",
-      "reminder": true,
+      "reminder": false,
       "id": 2
     }
   ]
