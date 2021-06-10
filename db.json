@@ -1,3 +1,16 @@
 {
-  "tasks": []
+  "tasks": [
+    {
+      "text": "Comer Banana",
+      "day": "Hoje",
+      "reminder": true,
+      "id": 1
+    },
+    {
+      "text": "Almoçar",
+      "day": "Todo dia ao meio-dia",
+      "reminder": true,
+      "id": 2
+    }
+  ]
 }
